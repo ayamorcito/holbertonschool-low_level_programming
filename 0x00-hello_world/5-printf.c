@@ -2,7 +2,6 @@
 
 /**
  * main - prints the specified phrase
- * 
  * Return: 0 allways if correct, other if not
  */
 int main(void)
