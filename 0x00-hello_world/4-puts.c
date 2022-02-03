@@ -1,10 +1,7 @@
 #include <stdio.h>
-
 /**
- * main - prints in the S-O the specified phrase  
- * Return: 0 allways if correct, other if not 
- * 
- *
+  * main - prints in the SO the specified phrase
+  * Return: 0 allways if correct other if not
  */
 int main(void)
 {
