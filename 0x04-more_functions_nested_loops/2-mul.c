@@ -7,9 +7,10 @@
  * @b: num input
  **/
 
-int result;
+
 int mul(int a, int b)
 {
-	int result=a*b;
-	return result;
+	int result = a * b;
+
+	return (result);
 }
