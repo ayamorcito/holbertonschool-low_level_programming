@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * _strncmy - compares two strings
+ * _strcmp - compares two strings
  * @s1: 1st string
  * @s2: 2d string
- *  
+ *
  * Return: a pointer to dest
  */
 
