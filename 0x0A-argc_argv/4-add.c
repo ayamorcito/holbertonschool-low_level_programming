@@ -26,13 +26,12 @@ int main(int argc, char *argv[])
 	{
 		for (i = 0; i < strlen(argv[j]); i++)
 		{
-			if (!isdigit (argv[i][j]))
+			if (!isdigit(argv[i][j]))
 			{
 				printf("Error\n");
 				return (1);
 			}
 		}
-	
 		add += atoi(argv[j]);
 	}
 	printf("%d\n", add);
