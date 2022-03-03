@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * str_concat - concatenates two strings
+ * string_nconcat - concatenates two strings
  * @s1: first string to concatenate
  * @s2: ssecond string to concatenate
  * @n: first n bytes to copy
