@@ -26,7 +26,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	for (st2 = 0; s2[st2] != '\0'; st2++)
 	{
 	}
-	if (n >= st2)
+	if (n > st2)
 	{
 		n = st2;
 	}
