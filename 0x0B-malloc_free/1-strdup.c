@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * _strdup - returns a *p to a newly allocated space in memory, whith a copy of the string
+ * _strdup - returns a *p to new allocated memory, whith a copy of the str
  * @str: string to copy
  * Return: pointer to the array (Success), NULL (Error)
  */
@@ -10,19 +10,19 @@ char *_strdup(char *str)
 {
 	char *p;
 	unsigned int i, sz;
-	
+
 	if (str == NULL)
 	{
 		return (NULL);
 	}
-	else 
+	else
 	{
 		for (sz = 0; str[sz] != '\0'; sz++)
 
 			sz++;
 
 		p = (char *) malloc((sz + 1) * sizeof(char));
-		
+
 		if (p  == NULL)
 		{
 			return (NULL);
