@@ -7,8 +7,7 @@
  * @age: age of the doggo
  * @owner: human partner of the doggo
  *
- * 
- */
+ **/
 struct dog
 {
 	char *name;
