@@ -46,17 +46,23 @@ void p_i(va_list str)
  */
 void print_all(const char * const format, ...)
 {
-	va_list str;
 	chfun pr[] = {
-		{"s", p_s}, {"c", p_c}, {"i", p_i}, {"f", p_f}, {NULL, NULL}
+		{"s", p_s}, 
+		{"c", p_c}, 
+		{"i", p_i}, 
+		{"f", p_f}, 
+		{NULL, NULL}
 	};
+
 	int i = 0;
 	int j = 0;
 	char *a = ", ";
 	char *b = "";
 
+	va_list str;
+
 	va_start(str, format);
-	i = 0;
+
 	while (format[i] != '\0' && format != NULL)
 	{
 		j = 0;
