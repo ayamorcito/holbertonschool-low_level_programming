@@ -1,16 +1,12 @@
 #include <stdarg.h>
-#ifndef VARIADIC
-#define VARIADIC
-/**
- *struct chfon - name of structure
- *@x: identifier for va_arg, to access struct by matching with format
- *@f: printf function
- */
-typedef struct chfon
+#include <stdlib.h>
+#ifndef VARARGS
+#define VARARGS
+typedef struct op
 {
-	char *x;
+	char *c;
 	void (*f)(va_list p);
-} chfun;
+} opp;
 
 int sum_them_all(const unsigned int n, ...);
 void print_numbers(const char *separator, const unsigned int n, ...);
