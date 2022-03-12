@@ -9,7 +9,7 @@
  */
 typedef struct chfon
 {
-	char x;
+	char *x;
 	void (*f)(va_list);
 } chfun;
 int sum_them_all(const unsigned int n, ...);
