@@ -1,7 +1,8 @@
-#include <stdarg.h>
-#include <stdlib.h>
 #ifndef VARARGS
 #define VARARGS
+
+#include <stdarg.h>
+#include <stdlib.h>
 typedef struct op
 {
 	char *c;
