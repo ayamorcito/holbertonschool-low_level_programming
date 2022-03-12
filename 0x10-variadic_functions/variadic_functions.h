@@ -1,7 +1,6 @@
+#include <stdarg.h>
 #ifndef VARIADIC
 #define VARIADIC
-#include <stdio.h>
-#include <stdarg.h>
 /**
  *struct chfon - name of structure
  *@x: identifier for va_arg, to access struct by matching with format
