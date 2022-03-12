@@ -50,8 +50,8 @@ void print_all(const char * const format, ...)
 	chfun pr[] = {
 		{"s", p_s}, {"c", p_c}, {"i", p_i}, {"f", p_f}, {NULL, NULL}
 	};
-	unsigned int i;
-	unsigned int j;
+	int i = 0;
+	int j = 0;
 	const char *a = ", ";
 	const char *b = "";
 
@@ -60,7 +60,7 @@ void print_all(const char * const format, ...)
 	while (format[i] != '\0' && format != NULL)
 	{
 		j = 0;
-		while (pr[j].x[0] != '\0')
+		while (pr[j].x != NULL)
 		{
 			if (pr[j].x[0] == format[i])
 		{
