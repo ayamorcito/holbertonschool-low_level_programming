@@ -3,6 +3,15 @@
 
 #include <stdarg.h>
 #include <stdlib.h>
+
+
+
+/**
+ * struct op - model for structs
+ * @c: something
+ * @f: something
+ **/
+
 typedef struct op
 {
 	char *c;
