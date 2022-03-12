@@ -5,7 +5,7 @@
 */
 void p_s(va_list str)
 {
-	char *aux = va_arg(str, char*);
+	char *aux = va_arg(str, char *);
 
 	if (aux == NULL)
 	{
@@ -20,7 +20,7 @@ void p_s(va_list str)
  */
 void p_c(va_list str)
 {
-	printf("%c", va_arg(str, int));
+	printf("%c", (char) va_arg(str, int));
 }
 /**
  *p_f - Ptrints int
@@ -28,7 +28,7 @@ void p_c(va_list str)
  */
 void p_f(va_list str)
 {
-	printf("%f", va_arg(str, double));
+	printf("%f", (float) va_arg(str, double));
 }
 /**
  *p_i - Ptrints float
@@ -47,10 +47,10 @@ void p_i(va_list str)
 void print_all(const char * const format, ...)
 {
 	chfun pr[] = {
-		{"s", p_s}, 
-		{"c", p_c}, 
-		{"i", p_i}, 
-		{"f", p_f}, 
+		{"s", p_s},
+		{"c", p_c},
+		{"i", p_i},
+		{"f", p_f},
 		{NULL, NULL}
 	};
 
@@ -69,12 +69,12 @@ void print_all(const char * const format, ...)
 		while (pr[j].x != NULL)
 		{
 			if (pr[j].x[0] == format[i])
-		{
-			printf("%s", b);
-			pr[j].f(str);
-			b = a;
-		}
-		j++;
+			{
+				printf("%s", b);
+				pr[j].f(str);
+				b = a;
+			}
+			j++;
 		}
 		i++;
 	}
