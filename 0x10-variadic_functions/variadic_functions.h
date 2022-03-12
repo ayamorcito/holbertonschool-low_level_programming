@@ -1,29 +1,19 @@
-#ifndef VARIDIC_FUNCTIONS
-#define VARIDIC_FUNCTIONS
-
+#ifndef VARIADIC
+#define VARIADIC
+#include <stdio.h>
 #include <stdarg.h>
-
-int _putchar(char c);
+/**
+ *struct chfon - name of structure
+ *@x: identifier for va_arg, to access struct by matching with format
+ *@f: printf function
+ */
+typedef struct chfon
+{
+	char x;
+	void (*f)(va_list);
+} chfun;
 int sum_them_all(const unsigned int n, ...);
 void print_numbers(const char *separator, const unsigned int n, ...);
 void print_strings(const char *separator, const unsigned int n, ...);
 void print_all(const char * const format, ...);
-
-
-/**
- * struct op - Struct op
- *
- * @op: The operator
- * @f: The function associated
- */
-typedef struct op
-{
-    char *op;
-    void (*f)(va_list);
-} op_t;
-void print_char(va_list args);
-void print_int(va_list args);
-void print_float(va_list args);
-void print_string(va_list args);
-
 #endif
